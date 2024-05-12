@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle ID Fetcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-dark text-light">
+    <div class="container">
+        <h1 class="text-center mt-5">Bundle ID Fetcher</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="appUrl" placeholder="Enter App Store URL">
+            <button class="btn btn-primary" onclick="fetchBundleId()">Fetch Bundle ID</button>
+        </div>
+        <pre id="output" class="bg-light text-dark p-3"></pre>
+    </div>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
