@@ -5,9 +5,10 @@ function fetchBundleId() {
 
     if (match) {
         const appId = match[1];
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; // Using CORS Anywhere (for development only)
         const lookupUrl = `https://itunes.apple.com/lookup?id=${appId}`;
 
-        fetch(lookupUrl)
+        fetch(proxyUrl + lookupUrl)
             .then(response => response.json())
             .then(data => {
                 if (data.resultCount > 0) {
